@@ -1,6 +1,6 @@
-var login = "terence";
+var login = "bhrpro";
 var mdp = "passer123";
-var prenom = "Terance"; 
+var prenom = "Bhrpro"; 
 
 
 function demande_mdp(){
