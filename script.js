@@ -5,11 +5,11 @@ var prenom = "Bhrpro";
 
 function demande_mdp(){
     var demande_mot_de_passe1 = window.prompt("Veuillez entrez votre mot de passe 🔐🔐:");
-    if (demande_mot_de_passe1 != mdp) {
+    if (demande_mot_de_passe1 != mdp && demande_mot_de_passe1 != null) {
         demande_mot_de_passe2 = window.prompt("Veuillez tapez le bon mot de passe 🔐🔐🔐:");
-        if(demande_mot_de_passe2 != mdp){
+        if(demande_mot_de_passe2 != mdp && demande_mot_de_passe2 != null){
             demande_mot_de_passe3 = window.prompt("Veuillez tapez le bon mot de passe 👿👿:");
-            if(demande_mot_de_passe3 != mdp){
+            if(demande_mot_de_passe3 != mdp && demande_mot_de_passe3 != null){
                 alert("Vous avez dépasser les limites d'essai ⌚⌚⌚⌚⏳");
                 document.write("<h1><center>💬💬💤💤💬💬💤💤</center></h1>");
             }else{
@@ -26,7 +26,7 @@ function demande_mdp(){
 function demande_prenom(){
     var ask_firt_name = window.prompt("votre prenom:");
     alert("vérification du prénom de l'internaute......🔰🌏🔰🌏.");
-    if(ask_firt_name != prenom){
+    if(ask_firt_name != prenom && ask_firt_name != null){
         alert("Prenom  ' "+ ask_firt_name + "❌❌❌❌ ' Incorrect 🚨🚨🚨🚨");
         demande_prenom();
     }else{
@@ -36,12 +36,13 @@ function demande_prenom(){
 
 function demande_user(){
     var demande_login = window.prompt("Veuillez entrez votre Login :");
-    if(demande_login != login){
-        demande_user();
+    if(demande_login != login && demande_login !=null){
+        demande_user();  
     }else{
         demande_mdp();
         //document.write("<h1><center>Bienvenue mon cher "+ demande_login + "</center></h1>");
-    }    
-}
+    }
+}    
+
 
 demande_user();
