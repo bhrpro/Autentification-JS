@@ -26,7 +26,7 @@ function demande_mdp(){
 function demande_prenom(){
     var ask_firt_name = window.prompt("votre prenom:");
     alert("vérification du prénom de l'internaute......🔰🌏🔰🌏.");
-    if(ask_firt_name != prenom && ask_firt_name != null){
+    if(ask_firt_name != prenom && ask_firt_name != null && ask_firt_name != "null"){
         alert("Prenom  ' "+ ask_firt_name + "❌❌❌❌ ' Incorrect 🚨🚨🚨🚨");
         demande_prenom();
     }else{
